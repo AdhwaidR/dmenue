@@ -367,9 +367,9 @@ movewordedge(int dir)
 static void
 keypress(XKeyEvent *ev)
 {
-	char buf[32];
+	char buf[64];
 	int len;
-	KeySym ksym;
+	KeySym ksym = NoSymbol;
 	Status status;
 	int i, offscreen = 0;
 	struct item *tmpsel;
